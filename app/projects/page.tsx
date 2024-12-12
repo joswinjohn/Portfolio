@@ -1,9 +1,7 @@
 "use client"
 
-import Image from "next/image";
 import { motion } from "motion/react"
 import { useEffect, useState } from 'react';
-import Link from "next/link";
 
 export default function Projects() {
     

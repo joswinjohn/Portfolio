@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import { color, motion } from "motion/react"
+import { motion } from "motion/react"
 import { useEffect, useState } from 'react';
 import Link from "next/link";
 
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="flex flex-col gap-8 row-start-3 items-center sm:items-start">
             <div className="flex flex-row gap-8">
                 <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"> 
-                    <img className="h-auto rounded-lg shadow-[0_0_60px_rgba(0,0,0,0.3)] dark:shadow-gray-800" src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="image description"/>
+                    <Image className="h-auto rounded-lg shadow-[0_0_60px_rgba(0,0,0,0.3)] dark:shadow-gray-800" src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="image description"/>
                 </div>
                 <div>
                     <h1>
@@ -175,7 +175,7 @@ export default function Home() {
         </div>
         <motion.div
             className='cursor'
-            // @ts-ignore
+            // @ts-expect-error
             variants={cursor_vars}
             animate={cursorVariant}
         />
